@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Atividade2_7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Integer num = 0;
+        Integer result = 0;
 
         System.out.println("Digite a o caractere da operação desejada (+, -, /, *): ");
         String operacao = sc.nextLine();
@@ -14,20 +14,20 @@ public class Atividade2_7 {
         Integer numero2 = sc.nextInt();
 
         if (operacao.equals("+")) {
-            num = numero1 + numero2;
-            System.out.println("O resultado é: " + num);
+            result = numero1 + numero2;
+            System.out.println("O resultado é: " + result);
         }
         if (operacao.equals("-")) {
-            num = numero1 - numero2;
-            System.out.println("O resultado é: " + num);
+            result = numero1 - numero2;
+            System.out.println("O resultado é: " + result);
         }
         if (operacao.equals("/")) {
-            num = numero1 / numero2;
-            System.out.println("O resultado é: " + num);
+            result = numero1 / numero2;
+            System.out.println("O resultado é: " + result);
         }
         if (operacao.equals("*")) {
-            num = numero1 * numero2;
-            System.out.println("O resultado é: " + num);
+            result = numero1 * numero2;
+            System.out.println("O resultado é: " + result);
         }
 
 
