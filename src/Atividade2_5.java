@@ -33,7 +33,7 @@ public class Atividade2_5 {
 
         }
 
-        if (diaDaSemana > 7 )
+        if (diaDaSemana > 7)
             System.out.println("Error: Digite um número entre 1 e 7");
 
     }
