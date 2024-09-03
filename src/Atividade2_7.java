@@ -16,19 +16,19 @@ public class Atividade2_7 {
         if (operacao.equals("+")) {
             result = numero1 + numero2;
             System.out.println("O resultado é: " + result);
-        }
-        if (operacao.equals("-")) {
+        } else if (operacao.equals("-")) {
             result = numero1 - numero2;
             System.out.println("O resultado é: " + result);
-        }
-        if (operacao.equals("/")) {
+        } else if (operacao.equals("/")) {
             result = numero1 / numero2;
             System.out.println("O resultado é: " + result);
         }
-        if (operacao.equals("*")) {
+        else if (operacao.equals("*")) {
             result = numero1 * numero2;
             System.out.println("O resultado é: " + result);
         }
+        else
+            System.out.println("Erro: Digite a o caractere dentre essas opções (+, -, /, *) ");
 
 
     }
