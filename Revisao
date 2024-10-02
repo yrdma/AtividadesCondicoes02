@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class revisao2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Qual o tamanho do grupo?");
+        int tamanhoGrupo = scanner.nextInt();
+        int[] idades = new int[tamanhoGrupo];
+        int maiorIdade = 0;
+        int menorIdade = 100;
+        int maioresDeIdade = 0;
+        int menoresDeIdade = 0;
+
+
+        for (int i=0; i < tamanhoGrupo; i++) {
+            System.out.println("Informe a idade da pessoa " + (i+1) + " :");
+            idades[i] = scanner.nextInt();
+
+            if (idades[i] > maiorIdade) {
+                maiorIdade = idades[i];
+            }
+            if (idades[i] < menorIdade) {
+                menorIdade = idades[i];
+            }
+
+            if(idades[i] >= 18) {
+                maioresDeIdade++;
+            }
+            if(idades[i] <18) {
+                menoresDeIdade++;
+            }
+
+        }
+
+        System.out.println("maior idade do grupo: " + maiorIdade);
+        System.out.println("Menor idade do grupo: " + menorIdade);
+        System.out.println("Existem " + maioresDeIdade + " pessoas maiores de idade");
+        System.out.println("E " + menoresDeIdade + " pessoas menores de idade");
